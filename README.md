@@ -9,7 +9,9 @@
 ## Uyarılar
 * Betiğin içerisinde 'pirc522'nin yolunu belirtmeniz gerekebilir. Proje dizinine bu kütüphaneyi de ekleyeceğim.
 
-##
+## RC522 Bağlantılarını Nasıl Yaparım?
+* pirc522 altında readme.md kısmında GPIO bağlantılarını görebilirsiniz.
+
 # English
 
 ## What this project do?
@@ -18,3 +20,6 @@
 
 ## Warnings
 * You may need to include 'pirc522' library in your root path (wherever it is). I included it to project.
+
+## How Can I connect RC522 to Raspberry Pi
+* Under pirc522/readme.md you can see the GPIO connections 
