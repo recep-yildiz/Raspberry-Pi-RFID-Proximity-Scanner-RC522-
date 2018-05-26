@@ -1,0 +1,7 @@
+setup.py
+pi_rc522.egg-info/PKG-INFO
+pi_rc522.egg-info/SOURCES.txt
+pi_rc522.egg-info/dependency_links.txt
+pi_rc522.egg-info/top_level.txt
+pirc522/__init__.py
+pirc522/util.py
