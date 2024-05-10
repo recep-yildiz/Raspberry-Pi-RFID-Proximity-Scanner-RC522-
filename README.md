@@ -1,25 +1,44 @@
-# Raspberry-Pi-RFID-Proximity-Scanner-RC522-
+# Raspberry Pi RFID Proximity Scanner with RC522
 
-# Türkçe
+## Overview
+This project leverages the Raspberry Pi and the RC522 RFID reader module to create a proximity scanner that can read various RFID-enabled cards through a simple graphical user interface developed with Python Tk. This system is ideal for reading RFID tags such as student IDs, bus cards, and access tokens, providing a unique identifier for each scanned tag that can be used for database entries or other applications.
 
-## Proje Ne yapar?
-* Proje basit bir arayüze sahiptir(Python Tk)
-* RFID teknolojili kartları okuyabilir( Öğrenci kartları, otobüs kartları, yoklama kartları vs. Banka kartlarının çoğunluğunu güvenlik nedeniyle okuyamaz. 'RFID ON' butonuna tıklandığında kartın okutulmasını bekleyecektir. RC522 ile okuduğu kart size bir numara verecektir, bu numara eşsizdir (unique). Eşsiz olmasının sebebi her kartın farklı bir frekansaralığına sahip olmasıdır. RC522 bu frekansı 10 tabanında bir sayıya dönüştürür. Bu sayı Primary Key olarak kullanılıp veritabanında bilgiler tutulabilir.
-
-## Uyarılar
-* Betiğin içerisinde 'pirc522'nin yolunu belirtmeniz gerekebilir. Proje dizinine bu kütüphaneyi de ekleyeceğim.
-
-## RC522 Bağlantılarını Nasıl Yaparım?
-* pirc522 altında readme.md kısmında GPIO bağlantılarını görebilirsiniz.
-
-# English
-
-## What this project do?
-* It has a simple Tk UI
-* It can read RFID keys/tags when 'RFID ON' button clicked. I set this button, when it's clicked, the program will wait for an RFID tag to read. Such as your student cards, bus cards or toll keys etc. It can't read debit cards mostly. When tag read, you'll see a 9-12 digit number. This number is unique and you can use it for primary key on your database.
+## Features
+- **Simple Tkinter User Interface**: Provides a minimalistic and easy-to-use interface to interact with the RFID scanner.
+- **RFID Tag Reading**: Capable of reading RFID tags when the 'RFID ON' button is clicked. The system waits for an RFID tag to be presented and retrieves a unique numerical identifier from each scanned tag.
 
 ## Warnings
-* You may need to include 'pirc522' library in your root path (wherever it is). I included it to project.
+- **Library Path**: You may need to specify the path to the `pirc522` library in your script depending on your setup. This library is included in the project directory for ease of use.
 
-## How Can I connect RC522 to Raspberry Pi
-* Under pirc522/readme.md you can see the GPIO connections 
+## Setup and Configuration
+### Connecting the RC522 to Raspberry Pi
+The connections between the RC522 module and the Raspberry Pi are critical for the operation of your scanner. You can find detailed instructions on how to establish these connections in the `pirc522/readme.md` file included in this project.
+
+### Prerequisites
+- Raspberry Pi (any model with GPIO pins)
+- RC522 RFID Reader Module
+- Jumper wires for connection
+- Python with Tkinter installed
+
+### Installation
+1. Clone the repository to your Raspberry Pi:
+   ```bash
+   git clone https://github.com/recep-yildiz/Raspberry-Pi-RFID-Proximity-Scanner-RC522-.git
+   ```
+
+2. Installation
+  ```bash
+   cd Raspberry-Pi-RFID-Proximity-Scanner-RC522
+```
+
+3. Navigate to the project directory
+  ```bash
+   cd Raspberry-Pi-RFID-Proximity-Scanner-RC522
+```
+
+4. Install required Python libraries
+  ```bash
+   pip install -r requirements.txt
+```
+
+### Usage
