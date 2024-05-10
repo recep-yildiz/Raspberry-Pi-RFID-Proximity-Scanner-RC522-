@@ -42,3 +42,12 @@ The connections between the RC522 module and the Raspberry Pi are critical for t
 ```
 
 ### Usage
+To start the RFID proximity scanner:
+
+1. Ensure your RC522 is properly connected to the Raspberry Pi as per the instructions.
+2. Run the main application:
+  ```bash
+   python3 main.ry.py
+```
+
+3. Click the 'RFID ON' button in the GUI to begin scanning for RFID tags
